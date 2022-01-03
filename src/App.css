@@ -1,0 +1,337 @@
+:root {
+    --headerBackgroundColor: white;
+    --mainBackgroundColor: gray;
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--mainBackgroundColor);
+    font-family: Arial, sans-serif;
+    margin: 0 0;
+}
+
+button {
+    border: .1rem solid black;
+    border-radius: .3rem;
+    background-color: rgb(226, 226, 226);
+    color: black;
+}
+
+button:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+select {
+    border: .1rem solid black;
+    background-color: rgb(226, 226, 226);
+    color: black;
+}
+
+#header {
+    margin: 0 auto;
+    width: 100vw;
+    background-color: var(--headerBackgroundColor);
+    color: black;
+    padding: 0 0;
+}
+
+#header h1 {
+    margin: 0 auto;
+    font-size: 2rem;
+    padding-top: .75rem;
+}
+
+#header h2 {
+    margin: 0 auto;
+    font-size: .85rem;
+    padding-bottom: .75rem;
+    
+}
+
+#gameButtonsDiv {
+    margin: .75rem 0;
+}
+
+.gameButton {
+    margin: 0 .5rem;
+    font-size: 1.3rem;
+
+}
+
+#categoryLoaderDiv {
+    margin-bottom: .65rem;
+    font-size: 1rem;
+}
+
+#timerOptionsDiv {
+    margin-bottom: .65rem;
+    font-size: 1rem;
+}
+
+#categoryOptionsDiv span, select{
+    font-size: 1rem;
+    /* margin: 1rem 0; */
+}
+
+#timerOptionsDiv span, select{
+    font-size: 1rem;
+    /* margin: 1rem 0; */
+}
+
+
+
+#categorySpan , #timerOptionsSpan{
+    margin: 0 .25rem;
+}
+
+
+
+@media screen and (max-width: 20000px){
+
+    .catchphrase-prompt_inactive, .headsup-prompt_inactive, .catchphrase-prompt_active{
+        width: min(80vw,700px);
+        height: 50vh;
+        border: .25rem solid white;
+        border-radius: 1rem;
+        margin: 0 auto .5rem auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        color: white;
+        
+        font-size: 8.5vw;
+    }
+
+    #skipButton {
+        width: min(80vw,700px);
+        height: 10vh;
+        font-size: 2rem;
+    }
+
+    @media (orientation:portrait) { 
+        .headsup-prompt_active {
+            width: min(80vw,700px);
+            height: 70vh;
+            border: .25rem solid white;
+            border-radius: 1rem;
+            margin: 0 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 4em;
+            font-size: 11.5vw;
+        }
+
+        #progressBar {
+            width: min(50vw,700px);
+            height: 10px;
+            margin: .5rem auto;
+            background-color: #ffffff;
+            text-align: center; /* To center it horizontally (if you want) */
+            line-height: 10px; /* To center it vertically */
+            color: white;
+        
+        }
+    }
+
+    @media (orientation:landscape) { 
+        .headsup-prompt_active {
+            width: 90vw;
+            height: 80vh;
+            border: .25rem solid white;
+            border-radius: 1rem;
+            margin: 0 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            font-size: 8.5vw;
+            
+        }
+
+        .catchphrase-prompt_active{
+            width: min(80vw,700px);
+            height: 50vh;
+            border: .25rem solid white;
+            border-radius: 1rem;
+            margin: 0 auto .5rem auto;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            color: white;
+            
+            font-size: 4.5vw;
+        }
+
+        #progressBar {
+            width: min(50vw,700px);
+            height: 10px;
+            margin: .5rem auto;
+            background-color: #ffffff;
+            text-align: center; /* To center it horizontally (if you want) */
+            line-height: 10px; /* To center it vertically */
+            color: white;
+        
+        }
+        #skipButton {
+            width: min(80vw,700px);
+            height: 20vh;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+    }
+
+
+
+}
+
+#prompt {
+
+}
+
+#promptTimer{
+    font-size: .7em;
+    color: rgb(202, 202, 202);
+    padding: 1em auto 0em auto;
+}
+
+#gameStats {
+    width: 100vw;
+    height: 100vh;
+
+}
+#gameStats h2 {
+    margin: 0 0 0 0;
+    padding: 1em 0;
+    background-color: white;
+}
+
+#gameStats ul {
+    width: 100%;
+    max-height: 75vh;
+    margin: .5em auto;
+    padding: 0 0;
+    overflow-y: scroll;
+}
+
+#gameStats li {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    font-size: 2em;
+    border: .1rem solid rgb(0, 0, 0);
+    
+}
+
+#gameStats button {
+    width: min(80vw,700px);
+    height: 3rem;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0 auto;
+
+    
+}
+
+@media screen and (min-width: 400px){
+    #muteButton {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 30px;
+        height: 30px;
+    }
+    #helpButton {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        z-index: 3;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #muteButton {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+    }
+    #helpButton {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        z-index: 3;
+    }
+}
+
+
+
+
+
+#progressBarProgress {
+    width: 10%;
+    height: 100%;
+    background-color: #b80000;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 100%; /* To center it vertically */
+    color: white;
+}
+
+
+
+
+#startButton {
+    font-size: 1.5rem;
+    margin: .5rem auto;
+}
+
+#helpDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 200vw;
+    background-color: white;
+    color: black;
+    z-index: 2;
+}
+
+#helpDiv h2 {
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+#helpDiv ul {
+    margin: 0 auto;
+    padding-left: 0px;
+    list-style-type: none;
+}
+#helpDiv li {
+   margin: 2em auto;
+}
+
+.faded {
+    opacity: .5;
+}
+
+.hidden {
+    display: none;
+}
