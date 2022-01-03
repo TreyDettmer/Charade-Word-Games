@@ -5,3 +5,8 @@ This is my first web application built using the popular ReactJS framework. My f
 
 
 ### When trying the app, keep in mind that the Heads Up game will only work on mobile devices. Reference the help page (the question mark icon in the top right of the app's webpage) to help solve any problem that you may face with the app.
+
+## Screenshots
+![Heads Up Screenshot](./public/screenshots/screenshot1.PNG)
+<img src="./public/screenshots/screenshot2.PNG" width="450">
+<img src="./public/screenshots/screenshot3.PNG" width="450">
