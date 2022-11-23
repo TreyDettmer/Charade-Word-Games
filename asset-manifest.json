@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Charade-Word-Games/static/css/main.5c640b2a.css",
+    "main.js": "/Charade-Word-Games/static/js/main.59b928a4.js",
+    "index.html": "/Charade-Word-Games/index.html",
+    "main.5c640b2a.css.map": "/Charade-Word-Games/static/css/main.5c640b2a.css.map",
+    "main.59b928a4.js.map": "/Charade-Word-Games/static/js/main.59b928a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c640b2a.css",
+    "static/js/main.59b928a4.js"
+  ]
+}
